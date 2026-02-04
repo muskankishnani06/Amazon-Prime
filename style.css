@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00050d;
+  padding: 1rem 5rem;
+  height: 7vh;
+  align-items: center;
+}
+
+.logo {
+  height: 1vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-svg {
+  height: 3vh;
+}
+
+.user-svg {
+  height: 2vw;
+}
+
+.nav-btn {
+  background-color: #157bcf;
+  width: 6vw;
+  border: none;
+  height: 5vh;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(24, 162, 255, 0.253) 0px 5px 15px;
+  font-weight: bold;
+}
+
+.nav-svg {
+  filter: invert(1);
+}
+
+nav li:hover {
+  background-color: white;
+  border-radius: 5px;
+  height: 3vh;
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+
+nav li a:hover {
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.language {
+  display: none;
+  position: absolute;
+  column-count: 5;
+  column-gap: 50px;
+  top: 100%;
+  right: 0;
+  min-width: 600px;
+  background-color: rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
+  margin-top: 1rem;
+}
+
+.dropdown:hover .language {
+  display: block;
+}
+
+.language a {
+  text-decoration: none;
+}
+
+#hero,
+#hero-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 5rem;
+  flex: 1;
+  gap: 3rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.join-btn {
+  height: 8vh;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f1f1f1;
+  color: rgba(0, 0, 0, 0.795);
+  padding: 1rem;
+}
+
+.container-right {
+  background-image: url("./asset/MLP.jpg");
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  background-position: right;
+  background-size: cover;
+  flex: 1;
+}
+
+.container-right-2 {
+  display: flex;
+  background-image: url("./asset/image\ 2");
+  height: 70vh;
+  width: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+}
+
+#subscription {
+  background-color: #00050d;
+  display: flex;
+  padding: 5rem;
+}
+
+.subscription-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.subscription-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.subscription-right img {
+  height: 20vh;
+  border-radius: 20px;
+}
+
+.subscription-right img:hover {
+  box-shadow: rgba(255, 255, 255, 0.466) 0px 3px 8px;
+}
+
+.subscription-title {
+  font-size: 3rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 3vh;
+  margin-top: 2rem;
+}
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #79b8f3;
+}
+
+.copyright {
+  color: #8197a4;
+  margin-bottom: 1rem;
+}
